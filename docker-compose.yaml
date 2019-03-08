@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  rabbimq:
+    build: .
+    ports:
+      - 5672:5672
+      - 15672:15672
+#    command:
+#      - 'rabbitmq-plugins enable rabbitmq_delayed_message_exchange'
+    restart: always
+
+  elasticsearch:
+    image:  docker.elastic.co/elasticsearch/elasticsearch:6.6.1
+    ports:
+      - "9200:9200"
+    restart: always
+    networks:
+      - es
+
+  kinbana:
+    image: docker.elastic.co/kibana/kibana:6.6.1
+    environment:
+      - ELASTICSEARCH_URL=elasticsearch:9200
+    networks:
+      - es
+    ports:
+      - "5601:5601"
+
+networks:
+  es:
