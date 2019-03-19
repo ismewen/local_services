@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="070431b1-6bfe-42fa-a205-c1b04a4558d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lapp/config/nginx/conf.d/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapp/config/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapp/config/php/php-fpm.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapp/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapp/services/php/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapp/www/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lapp/config/php/php.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lapp/services/php/source.list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lapp/www/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lapp/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lapp/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lapp/logs/nginx/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/lapp/logs/nginx/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lapp/services/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lapp/services/php/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,20 +19,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docker-compose.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <file leaf-file-name="docker-compose.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lapp/docker-compose.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="181">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docker-compose.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lapp/docker-compose.yaml">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp/zPhal-dockerfiles/files/php/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="352">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="source.list" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lapp/services/php/source.list">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lapp/www/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -41,17 +58,8 @@
       <file leaf-file-name="php-fpm.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lapp/config/php/php-fpm.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
+            <state relative-caret-position="220">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lapp/config/nginx/nginx.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -65,36 +73,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lapp/www/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lapp/services/php/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="-194">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lapp/logs/nginx/error.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp/zPhal-dockerfiles/files/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+            <state relative-caret-position="242">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="php.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp/zPhal-dockerfiles/files/php/php.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="1255" column="32" selection-start-line="1255" selection-start-column="32" selection-end-line="1255" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="php.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lapp/config/php/php.ini">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -102,6 +110,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Version does not match</find>
+      <find>postgresql</find>
+      <find>pgsql</find>
+      <find>php_pgsql</find>
       <find>extension=phalcon.so</find>
     </findStrings>
   </component>
@@ -121,9 +132,12 @@
         <option value="$PROJECT_DIR$/lapp/config/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/lapp/config/nginx/default.conf" />
         <option value="$PROJECT_DIR$/lapp/config/php/php-fpm.conf" />
-        <option value="$PROJECT_DIR$/lapp/docker-compose.yaml" />
-        <option value="$PROJECT_DIR$/lapp/services/php/Dockerfile" />
         <option value="$PROJECT_DIR$/lapp/www/index.php" />
+        <option value="$PROJECT_DIR$/lapp/www/test.php" />
+        <option value="$PROJECT_DIR$/lapp/config/php/source.list" />
+        <option value="$PROJECT_DIR$/lapp/services/php/Dockerfile" />
+        <option value="$PROJECT_DIR$/temp/zPhal-dockerfiles/files/php/php.ini" />
+        <option value="$PROJECT_DIR$/lapp/docker-compose.yaml" />
       </list>
     </option>
   </component>
@@ -137,8 +151,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="174" />
-    <option name="y" value="23" />
+    <option name="x" value="314" />
+    <option name="y" value="41" />
     <option name="width" value="1695" />
     <option name="height" value="986" />
   </component>
@@ -164,48 +178,53 @@
               <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
               <item name="local_services" type="462c0819:PsiDirectoryNode" />
               <item name="lapp" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
               <item name="local_services" type="462c0819:PsiDirectoryNode" />
               <item name="lapp" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="local_services" type="462c0819:PsiDirectoryNode" />
-              <item name="lapp" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-              <item name="conf.d" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="local_services" type="462c0819:PsiDirectoryNode" />
-              <item name="lapp" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
               <item name="local_services" type="462c0819:PsiDirectoryNode" />
               <item name="lapp" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="local_services" type="462c0819:PsiDirectoryNode" />
-              <item name="lapp" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="local_services" type="462c0819:PsiDirectoryNode" />
-              <item name="lapp" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_services" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_services" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="zPhal-dockerfiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_services" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="zPhal-dockerfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_services" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="zPhal-dockerfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="local_services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="local_services" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="zPhal-dockerfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,9 +243,11 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lapp/services/php" />
+      <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$/lapp/config/nginx/conf.d" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lapp/config/php" />
       <recent name="$PROJECT_DIR$/lapp/php" />
       <recent name="$PROJECT_DIR$/php" />
     </key>
@@ -257,8 +278,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="174" y="23" width="1695" height="986" extended-state="0" />
-    <editor active="true" />
+    <frame x="314" y="41" width="1695" height="986" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -266,8 +286,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27367204" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19903207" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.39838338" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19903207" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -289,6 +309,7 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.d" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -371,20 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lapp/config/php/php-fpm.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lapp/config/nginx/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -395,13 +402,6 @@
     <entry file="file://$PROJECT_DIR$/lapp/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lapp/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -409,15 +409,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lapp/services/php/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/lapp/logs/nginx/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lapp/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lapp/logs/nginx/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/lapp/config/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-742">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lapp/config/nginx/conf.d/default.conf">
       <provider selected="true" editor-type-id="text-editor">
@@ -426,10 +433,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lapp/www/index.php">
+    <entry file="file://$PROJECT_DIR$/lapp/config/php/php-fpm.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lapp/www/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lapp/services/php/source.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/zPhal-dockerfiles/files/php/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/zPhal-dockerfiles/files/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="1255" column="32" selection-start-line="1255" selection-start-column="32" selection-end-line="1255" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lapp/config/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/zPhal-dockerfiles/files/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lapp/services/php/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lapp/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
         </state>
       </provider>
     </entry>

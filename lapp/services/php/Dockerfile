@@ -1,5 +1,6 @@
 FROM php:7.2-fpm
 #  设置时区
+ADD ./source.list  /etc/apt/
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
@@ -7,13 +8,17 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
+        libpq-dev \
         libpng-dev \
 		libjpeg62-turbo-dev \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
     && docker-php-ext-install -j$(nproc) gd \
         && docker-php-ext-install zip \
         && docker-php-ext-install opcache \
+        && docker-php-ext-install pdo pdo_pgsql \
         && rm -r /var/lib/apt/lists/*
+
 
 #  将预先下载好的拓展包从宿主机拷贝进去
 #COPY ./pkg/redis.tgz /home/redis.tgz
