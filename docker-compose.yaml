@@ -29,5 +29,14 @@ services:
     ports:
       - "5601:5601"
 
+  mysql_db:
+    image: mysql:5.6
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: ismewen
 networks:
   es:
+
