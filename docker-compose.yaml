@@ -1,14 +1,14 @@
 version: "3"
 
 services:
-  rabbimq:
-    build: .
-    ports:
-      - 5672:5672
-      - 15672:15672
-#    command:
-#      - 'rabbitmq-plugins enable rabbitmq_delayed_message_exchange'
-    restart: always
+#  rabbimq:
+#    build: .
+#    ports:
+#      - 5672:5672
+#      - 15672:15672
+##    command:
+##      - 'rabbitmq-plugins enable rabbitmq_delayed_message_exchange'
+#    restart: always
 
   elasticsearch:
     image: elasticsearch:6.6.1
@@ -26,13 +26,44 @@ services:
     networks:
       - es
     restart: always
+    depends_on:
+      - elasticsearch
     ports:
       - "5601:5601"
+
+  apm:
+     image: elastic/apm-server:6.6.1
+     ports:
+        - "8200:8200"
+     environment:
+       - ELASTICSEARCH_URL=http://elasticsearch:9200
+     networks:
+        - es
+     depends_on:
+        - elasticsearch
+        - kinbana
+
+  logstash:
+      image: elastic/logstash:6.6.1
+      environment:
+       - ELASTICSEARCH_URL=http://elasticsearch:9200
+      networks:
+        - es
+      depends_on:
+        - elasticsearch
+        - kinbana
+      volumes:
+        - /Users/wenjun/work/aggregation/log:/log
+        - .elk/settings/logstash.conf:/etc/logstash/conf.d/logstash.conf
+
+
 
   mysql_db:
     image: mysql:5.6
     command: --default-authentication-plugin=mysql_native_password
     restart: always
+    volumes:
+      - mysql_data:/var/lib/mysql
     ports:
       - '3306:3306'
     environment:
@@ -40,3 +71,6 @@ services:
 networks:
   es:
 
+
+volumes:
+  mysql_data:
