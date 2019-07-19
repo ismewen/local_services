@@ -53,8 +53,8 @@ services:
         - elasticsearch
         - kinbana
       volumes:
-        - /Users/wenjun/work/aggregation/log:/log
-        - .elk/settings/logstash.conf:/etc/logstash/conf.d/logstash.conf
+        - ./log:/log
+        - ./elk/settings/logstash.conf:/usr/share/logstash/config/logstash.conf
 
 
 
