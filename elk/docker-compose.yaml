@@ -40,23 +40,25 @@ services:
       - ELASTICSEARCH_URL=http://elasticsearch:9200
     networks:
       - es
+    ports:
+      - "5044:5044"
     depends_on:
       - elasticsearch
       - kinbana
     volumes:
       - ./log:/log
-      - ./elk/settings/logstash.conf:/usr/share/logstash/config/logstash.conf
-
-
+      - ./config/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
   filebeat:
-    image:  docker.elastic.co/beats/filebeat:6.6.1
+    image: elastic/filebeat:6.6.1
     restart: always
     networks:
       - es
+    volumes:
+      - ./config/filebeat.yml:/usr/share/filebeat/filebeat.yml
+      - ./log:/log
 
 networks:
   es:
-
 
 volumes:
   mysql_data:
