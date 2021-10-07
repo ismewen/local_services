@@ -10,24 +10,16 @@ services:
 #      - 'rabbitmq-plugins enable rabbitmq_delayed_message_exchange'
     restart: always
 
-  elasticsearch:
-    image: elasticsearch:6.6.1
-
-    ports:
-      - "9200:9200"
+  mysql:
+    image: mysql:5.6
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
-    networks:
-      - es
-
-  kinbana:
-    image: kibana:6.6.1
     environment:
-      - ELASTICSEARCH_URL=http://elasticsearch:9200
-    networks:
-      - es
-    restart: always
+      MYSQL_ROOT_PASSWORD: ismewen
     ports:
-      - "5601:5601"
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
 
-networks:
-  es:
+volumes:
+  mysql-data:
